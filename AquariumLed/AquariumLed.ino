@@ -62,7 +62,7 @@
   // 4. Start Brightness. This value should be between 0 (the leds are off) and 255 (max brightness);
   // 5. End Brightness. This value should be between 0 (the leds are off) and 255 (max brightness);
   //
-  // Notes: Start Time should be < from End Time for RiseTheBrightness and Start Time should be > from End Time for DropTheBrightness.
+  // Notes: Start Time should be < from End Time for RiseTheBrightness and Start Time should be < from End Time for DropTheBrightness.
   // Start Brightness should be < from End Brightness for RiseTheBrightness and Start Brightness should be > from End Brightness for DropTheBrightness.
   //
   // 255-(50/1050 * 255) = 242.857142857 White and Red
