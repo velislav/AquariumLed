@@ -81,7 +81,8 @@
           //RiseTheBrightness(ThreeWhiteLeds, "00:00:00", "23:59:59", 1, 1);
           //RiseTheBrightness(FourRedLeds, "00:00:00", "23:59:59", 1, 1);   
     }
-    if (1 == 1 ) {        
+
+    // Main light configuration       
       // Twilight start:  05:44 - 06:05
         //RiseTheBrightness(TwoBlueLeds, "05:44:00", "06:05:00", BlueBeforeTwilightStart, 30);
         //RiseTheBrightness(TwoWhiteLeds, "05:44:00", "06:05:00", 0, 5);
@@ -116,9 +117,10 @@
         //DropTheBrightness(ThreeWhiteLeds, "18:05:00", "18:16:00", 5, 0);
         
      
-      // Moon phase
-      //Serial.print("DayOfMonth: ");
-      //Serial.println(DayOfMonth);
+    // Moon phase
+    // To configure Moon phase just change ActivateMoonPhaseLight = 1 for ON and ActivateMoonPhaseLight = 0 for OFF.
+    byte ActivateMoonPhaseLight = 0;
+    if (ActivateMoonPhaseLight == 1) {    
       if (DayOfMonth == 1) {
         BlueBeforeTwilightStart = 0;
         BlueAfterTwilightEnd = 1;
@@ -330,13 +332,13 @@
         RiseTheBrightness(TwoBlueLeds, "00:30:00", "00:40:00", 1, BlueBeforeTwilightStart);      
         RiseTheBrightness(TwoBlueLeds, "00:40:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
       }
-      if (DayOfMonth == 24) {
+      if (DayOfMonth == 25) {
         BlueBeforeTwilightStart = 9;
         BlueAfterTwilightEnd = 0;        
         RiseTheBrightness(TwoBlueLeds, "01:18:00", "01:28:00", 1, BlueBeforeTwilightStart);      
         RiseTheBrightness(TwoBlueLeds, "01:38:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
       }    
-      if (DayOfMonth == 25) {
+      if (DayOfMonth == 24) {
         BlueBeforeTwilightStart = 7;
         BlueAfterTwilightEnd = 0;        
         RiseTheBrightness(TwoBlueLeds, "02:05:00", "02:15:00", 1, BlueBeforeTwilightStart);      
@@ -397,7 +399,6 @@ void loop() {
   // Fan();  
     Fan();
   // General delay
-    //delay(1000);  
     delay(1000);
 }
 
