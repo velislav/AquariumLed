@@ -332,13 +332,13 @@
         RiseTheBrightness(TwoBlueLeds, "00:30:00", "00:40:00", 1, BlueBeforeTwilightStart);      
         RiseTheBrightness(TwoBlueLeds, "00:40:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
       }
-      if (DayOfMonth == 25) {
+      if (DayOfMonth == 24) {
         BlueBeforeTwilightStart = 9;
         BlueAfterTwilightEnd = 0;        
         RiseTheBrightness(TwoBlueLeds, "01:18:00", "01:28:00", 1, BlueBeforeTwilightStart);      
         RiseTheBrightness(TwoBlueLeds, "01:38:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
       }    
-      if (DayOfMonth == 24) {
+      if (DayOfMonth == 25) {
         BlueBeforeTwilightStart = 7;
         BlueAfterTwilightEnd = 0;        
         RiseTheBrightness(TwoBlueLeds, "02:05:00", "02:15:00", 1, BlueBeforeTwilightStart);      
