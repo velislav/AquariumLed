@@ -73,193 +73,293 @@
   //
   //     11 Aug 2013	04:54	19:16	05:19	18:52	05:44	18:27	06:05	18:05	75°East-northeast	285°West-northwest	12h 00m 05s	+ 07s	12:05	71.8° 	151.598
   void LedLighting() {   
-    // Twilight start:  05:44 - 06:05
-      //RiseTheBrightness(TwoBlueLeds, "05:44:00", "06:05:00", BlueBeforeTwilightStart, 30);
-      //RiseTheBrightness(TwoWhiteLeds, "05:44:00", "06:05:00", 0, 5);
-      //RiseTheBrightness(ThreeWhiteLeds, "05:55:00", "06:05:00", 0, 5);
-      
-    // Sunrise:         06:05 - 06:15
-      //RiseTheBrightness(TwoBlueLeds, "06:05:00", "06:15:00", 30, 100);
-      //RiseTheBrightness(FourRedLeds, "06:05:00", "06:15:00", 1, 100);
-      //RiseTheBrightness(TwoWhiteLeds, "06:05:00", "06:15:00", 5, 100);
-      //RiseTheBrightness(ThreeWhiteLeds, "06:05:00", "06:15:00", 5, 100);
-    
-    // Day Light:       06:15 - 12:05, 12:05 - 17:55       
-      //RiseTheBrightness(TwoBlueLeds, "06:15:00", "12:05:00", 100, 130);
-      //RiseTheBrightness(FourRedLeds, "06:15:00", "12:05:00", 100, 130);
-      //RiseTheBrightness(TwoWhiteLeds, "06:15:00", "12:05:00", 100, 130);
-      //RiseTheBrightness(ThreeWhiteLeds, "06:15:00", "12:05:00", 100, 130);
-      
-      //DropTheBrightness(TwoBlueLeds, "12:05:00", "17:55:00", 130, 100);
-      //DropTheBrightness(FourRedLeds, "12:05:00", "17:55:00", 130, 100);
-      //DropTheBrightness(TwoWhiteLeds, "12:05:00", "17:55:00", 130, 100);
-      //DropTheBrightness(ThreeWhiteLeds, "12:05:00", "17:55:00", 130, 100);
-    
-    // Sunset:          17:55 - 18:05
-      //DropTheBrightness(TwoBlueLeds, "17:55:00", "18:05:00", 100, 30);
-      //DropTheBrightness(FourRedLeds, "17:55:00", "18:05:00", 100, 0);
-      //DropTheBrightness(TwoWhiteLeds, "17:55:00", "18:05:00", 100, 5);
-      //DropTheBrightness(ThreeWhiteLeds, "17:55:00", "18:05:00", 100, 5);  
-    
-    // Twilight end:    18:05 - 18:27
-      //DropTheBrightness(TwoBlueLeds, "18:05:00", "18:27:00", 30, BlueAfterTwilightEnd);
-      //DropTheBrightness(TwoWhiteLeds, "18:05:00", "18:27:00", 5, 0);
-      //DropTheBrightness(ThreeWhiteLeds, "18:05:00", "18:16:00", 5, 0);
-      
     // Temp
-    int TestOn = 2;
-    if (TestOn == 2) { 
+    int TestOn = 0;
+    if (TestOn == 1) {
           //RiseTheBrightness(TwoBlueLeds, "00:00:00", "23:59:59", 1, 1);
-          RiseTheBrightness(TwoWhiteLeds, "00:00:00", "23:59:59", 250, 250);
-          RiseTheBrightness(ThreeWhiteLeds, "00:00:00", "23:59:59", 250, 250);
+          //RiseTheBrightness(TwoWhiteLeds, "00:00:00", "23:59:59", 1, 1);
+          //RiseTheBrightness(ThreeWhiteLeds, "00:00:00", "23:59:59", 1, 1);
           //RiseTheBrightness(FourRedLeds, "00:00:00", "23:59:59", 1, 1);   
     }
-    
-    if (TestOn == 1) {    
-        RiseTheBrightness(TwoBlueLeds, "12:05:00", "05:05:00", 255, 255);
-        RiseTheBrightness(TwoWhiteLeds, "12:05:00", "02:05:00", 255, 255);
-        RiseTheBrightness(ThreeWhiteLeds, "12:05:00", "02:05:00", 255, 255);
-        RiseTheBrightness(FourRedLeds, "12:05:00", "02:05:00", 255, 255);      
+    if (1 == 1 ) {        
+      // Twilight start:  05:44 - 06:05
+        //RiseTheBrightness(TwoBlueLeds, "05:44:00", "06:05:00", BlueBeforeTwilightStart, 30);
+        //RiseTheBrightness(TwoWhiteLeds, "05:44:00", "06:05:00", 0, 5);
+        //RiseTheBrightness(ThreeWhiteLeds, "05:55:00", "06:05:00", 0, 5);
         
- 
-    // Twilight start:  
-      RiseTheBrightness(TwoBlueLeds, "02:25:00", "02:25:20", 0, 30);
-      RiseTheBrightness(TwoWhiteLeds, "02:25:00", "02:25:20", 0, 5);
-      RiseTheBrightness(ThreeWhiteLeds, "02:25:10", "02:25:20", 0, 5);
+      // Sunrise:         06:05 - 06:15
+        //RiseTheBrightness(TwoBlueLeds, "06:05:00", "06:15:00", 30, 100);
+        //RiseTheBrightness(FourRedLeds, "06:05:00", "06:15:00", 1, 100);
+        //RiseTheBrightness(TwoWhiteLeds, "06:05:00", "06:15:00", 5, 100);
+        //RiseTheBrightness(ThreeWhiteLeds, "06:05:00", "06:15:00", 5, 100);
       
-    // Sunrise:         
-      RiseTheBrightness(TwoBlueLeds, "02:25:20", "02:25:30", 30, 200);
-      RiseTheBrightness(FourRedLeds, "02:25:20", "02:25:30", 1, 200);
-      RiseTheBrightness(TwoWhiteLeds, "02:25:20", "02:25:30", 5, 200);
-      RiseTheBrightness(ThreeWhiteLeds, "02:25:20", "02:25:30", 5, 200);
-    
-    // Day Light:        
-      RiseTheBrightness(TwoBlueLeds, "02:25:30", "02:26:00", 200, 255);
-      RiseTheBrightness(FourRedLeds, "02:25:30", "02:26:00", 200, 255);
-      RiseTheBrightness(TwoWhiteLeds, "02:25:30", "02:26:00", 200, 255);
-      RiseTheBrightness(ThreeWhiteLeds, "02:25:30", "02:26:00", 200, 255);
-      
-      DropTheBrightness(TwoBlueLeds, "02:26:00", "02:26:30", 255, 200);
-      DropTheBrightness(FourRedLeds, "02:26:00", "02:26:30", 255, 200);
-      DropTheBrightness(TwoWhiteLeds, "02:26:00", "02:26:30", 255, 200);
-      DropTheBrightness(ThreeWhiteLeds, "02:26:00", "02:26:30", 255, 200);
-    
-    // Sunset:        
-      DropTheBrightness(TwoBlueLeds, "02:27:00", "02:27:10", 200, 30);
-      DropTheBrightness(FourRedLeds, "02:27:00", "02:27:10", 200, 0);
-      DropTheBrightness(TwoWhiteLeds, "02:27:00", "02:27:10", 200, 5);
-      DropTheBrightness(ThreeWhiteLeds, "02:27:00", "02:27:10", 200, 5);  
-    
-    // Twilight end:    
-      DropTheBrightness(TwoBlueLeds, "02:27:10", "02:27:30", 30, 0);
-      DropTheBrightness(TwoWhiteLeds, "02:27:10", "02:27:30", 5, 0);
-      DropTheBrightness(ThreeWhiteLeds, "02:27:10", "02:27:30", 5, 0);
+      // Day Light:       06:15 - 12:05, 12:05 - 17:55       
+        //RiseTheBrightness(TwoBlueLeds, "06:15:00", "12:05:00", 100, 130);
+        //RiseTheBrightness(FourRedLeds, "06:15:00", "12:05:00", 100, 130);
+        //RiseTheBrightness(TwoWhiteLeds, "06:15:00", "12:05:00", 100, 130);
+        //RiseTheBrightness(ThreeWhiteLeds, "06:15:00", "12:05:00", 100, 130);
         
-    }
+        //DropTheBrightness(TwoBlueLeds, "12:05:00", "17:55:00", 130, 100);
+        //DropTheBrightness(FourRedLeds, "12:05:00", "17:55:00", 130, 100);
+        //DropTheBrightness(TwoWhiteLeds, "12:05:00", "17:55:00", 130, 100);
+        //DropTheBrightness(ThreeWhiteLeds, "12:05:00", "17:55:00", 130, 100);
       
+      // Sunset:          17:55 - 18:05
+        //DropTheBrightness(TwoBlueLeds, "17:55:00", "18:05:00", 100, 30);
+        //DropTheBrightness(FourRedLeds, "17:55:00", "18:05:00", 100, 0);
+        //DropTheBrightness(TwoWhiteLeds, "17:55:00", "18:05:00", 100, 5);
+        //DropTheBrightness(ThreeWhiteLeds, "17:55:00", "18:05:00", 100, 5);  
+      
+      // Twilight end:    18:05 - 18:27
+        //DropTheBrightness(TwoBlueLeds, "18:05:00", "18:27:00", 30, BlueAfterTwilightEnd);
+        //DropTheBrightness(TwoWhiteLeds, "18:05:00", "18:27:00", 5, 0);
+        //DropTheBrightness(ThreeWhiteLeds, "18:05:00", "18:16:00", 5, 0);
+        
+     
+      // Moon phase
+      //Serial.print("DayOfMonth: ");
+      //Serial.println(DayOfMonth);
+      if (DayOfMonth == 1) {
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 1;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "19:18:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "19:18:00", "19:28:00", BlueAfterTwilightEnd, 0);      
+      }
+      if (DayOfMonth == 2) {
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 2;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "20:04:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "20:04:00", "20:14:00", BlueAfterTwilightEnd, 0);      
+      }
+      if (DayOfMonth == 3) {
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 4;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "20:51:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "20:51:00", "21:01:00", BlueAfterTwilightEnd, 0);      
+      }
+      if (DayOfMonth == 4) {
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 7;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "21:39:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "21:39:00", "21:49:00", BlueAfterTwilightEnd, 0);      
+      }
+      if (DayOfMonth == 5) {
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 10;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "22:20:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "22:20:00", "22:30:00", BlueAfterTwilightEnd, 0);      
+      }
+      if (DayOfMonth == 6) {
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 13;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "23:23:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "23:23:00", "23:33:00", BlueAfterTwilightEnd, 0);      
+      }    
+      if (DayOfMonth == 7) {
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 17;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "23:50:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "23:50:00", "23:59:59", BlueAfterTwilightEnd, 0);      
+      }
+      if (DayOfMonth == 8) {
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 20;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "23:59:59", BlueAfterTwilightEnd, BlueAfterTwilightEnd);      
+      }
+      if (DayOfMonth == 9) {
+        // Continue from date 8
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 20;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "00:20:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "00:20:00", "00:30:00", BlueAfterTwilightEnd, 0);
+        
+        // Actual day
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 23;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "23:59:59", BlueAfterTwilightEnd, BlueAfterTwilightEnd);     
+      }
+      if (DayOfMonth == 10) {
+        // Continue from date 9
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 23;        
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "01:18:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);        
+        DropTheBrightness(TwoBlueLeds, "01:18:00", "01:28:00", BlueAfterTwilightEnd, 0); 
+        
+        // Actual day
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 26;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "23:59:59", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+      }
+      if (DayOfMonth == 11) {
+        // Continue from date 10
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 26;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "02:18:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "02:18:00", "02:28:00", BlueAfterTwilightEnd, 0);      
+        
+        // Actual Day
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 28;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "23:59:59", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+              
+      }
+      if (DayOfMonth == 12) {
+        // Continue from date 11
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 28;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "03:18:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);        
+        DropTheBrightness(TwoBlueLeds, "03:18:00", "03:28:00", BlueAfterTwilightEnd, 0);
+        
+        // Actual Day
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 29;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "23:59:59", BlueAfterTwilightEnd, BlueAfterTwilightEnd);   
+      }
+      if (DayOfMonth == 13) {
+        // Continue from date 12
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 29;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "04:16:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "04:16:00", "04:26:00", BlueAfterTwilightEnd, 0);
+        
+        // Actual Day
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 30;
+        RiseTheBrightness(TwoBlueLeds, "18:27:00", "23:59:59", BlueAfterTwilightEnd, BlueAfterTwilightEnd);    
+      }    
+      if (DayOfMonth == 14) {
+        // Continue from date 13        
+        BlueBeforeTwilightStart = 0;
+        BlueAfterTwilightEnd = 30;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:12:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
+        DropTheBrightness(TwoBlueLeds, "05:12:00", "05:22:00", BlueAfterTwilightEnd, 0);           
+        
+        // Actual Day
+        BlueBeforeTwilightStart = 30;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "18:41:00", "18:51:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "18:51:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }        
+      if (DayOfMonth == 15) {
+        // Continue from date 14
+        BlueBeforeTwilightStart = 30;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
 
-      
-    // Moon phase
-    Serial.print("DayOfMonth: ");
-    Serial.println(DayOfMonth);
-    if (1 == 0 ) {
-    if (DayOfMonth == 13) {
-      BlueBeforeTwilightStart = 0;
-      BlueAfterTwilightEnd = 30;
-      RiseTheBrightness(TwoBlueLeds, "18:27:00", "05:12:00", BlueAfterTwilightEnd, BlueAfterTwilightEnd);
-      DropTheBrightness(TwoBlueLeds, "05:12:00", "05:22:00", BlueAfterTwilightEnd, 0);      
-    }    
-    if (DayOfMonth == 14) {
-      BlueBeforeTwilightStart = 30;
-      RiseTheBrightness(TwoBlueLeds, "18:41:00", "18:51:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "18:51:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }        
-    if (DayOfMonth == 15) {
-      BlueBeforeTwilightStart = 29;
-      RiseTheBrightness(TwoBlueLeds, "19:33:00", "19:43:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "19:43:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }    
-    if (DayOfMonth == 16) {
-      BlueBeforeTwilightStart = 28;
-      RiseTheBrightness(TwoBlueLeds, "20:24:00", "20:34:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "20:34:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }    
-    if (DayOfMonth == 17) {
-      BlueBeforeTwilightStart = 26;
-      RiseTheBrightness(TwoBlueLeds, "21:14:00", "21:24:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "21:24:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
-    if (DayOfMonth == 18) {
-      BlueBeforeTwilightStart = 23;
-      RiseTheBrightness(TwoBlueLeds, "22:03:00", "22:13:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "22:13:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
-    if (DayOfMonth == 19) {
-      BlueBeforeTwilightStart = 21;
-      RiseTheBrightness(TwoBlueLeds, "22:52:00", "23:02:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "23:02:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
-    if (DayOfMonth == 20) {
-      BlueBeforeTwilightStart = 18;
-      RiseTheBrightness(TwoBlueLeds, "23:41:00", "23:51:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "23:51:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
-    if (DayOfMonth == 21) {
-      BlueBeforeTwilightStart = 15;
-      RiseTheBrightness(TwoBlueLeds, "00:00:00", "00:10:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "00:10:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
-    if (DayOfMonth == 22) {
-      BlueBeforeTwilightStart = 12;
-      RiseTheBrightness(TwoBlueLeds, "00:30:00", "00:40:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "00:40:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
-    if (DayOfMonth == 23) {
-      BlueBeforeTwilightStart = 9;
-      RiseTheBrightness(TwoBlueLeds, "01:18:00", "01:28:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "01:38:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }    
-    if (DayOfMonth == 24) {
-      BlueBeforeTwilightStart = 7;
-      RiseTheBrightness(TwoBlueLeds, "02:05:00", "02:15:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "02:15:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
-    if (DayOfMonth == 25) {
-      BlueBeforeTwilightStart = 4;
-      RiseTheBrightness(TwoBlueLeds, "02:51:00", "03:01:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "03:01:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;    
-    }
-    if (DayOfMonth == 26) {
-      BlueBeforeTwilightStart = 3;
-      RiseTheBrightness(TwoBlueLeds, "03:37:00", "03:47:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "03:47:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
-    if (DayOfMonth == 27) {
-      BlueBeforeTwilightStart = 1;
-      RiseTheBrightness(TwoBlueLeds, "14:22:00", "04:32:00", 1, BlueBeforeTwilightStart);      
-      RiseTheBrightness(TwoBlueLeds, "04:32:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
-      BlueAfterTwilightEnd = 0;
-    }
+        // Actual Day        
+        BlueBeforeTwilightStart = 29;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "19:33:00", "19:43:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "19:43:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }    
+      if (DayOfMonth == 16) {
+        // Continue from date 15
+        BlueBeforeTwilightStart = 29;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+        
+        // Actual Day
+        BlueBeforeTwilightStart = 28;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "20:24:00", "20:34:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "20:34:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }    
+      if (DayOfMonth == 17) {
+        // Continue from date 16
+        BlueBeforeTwilightStart = 28;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);        
+        
+        // Actual Day
+        BlueBeforeTwilightStart = 26;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "21:14:00", "21:24:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "21:24:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }
+      if (DayOfMonth == 18) {
+        // Continue from date 17
+        BlueBeforeTwilightStart = 26;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);        
+        
+        // Actual Day
+        BlueBeforeTwilightStart = 23;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "22:03:00", "22:13:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "22:13:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }
+      if (DayOfMonth == 19) {
+        // Continue from date 18
+        BlueBeforeTwilightStart = 23;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);        
+        
+        // Actual Day
+        BlueBeforeTwilightStart = 21;
+        BlueAfterTwilightEnd = 0;        
+        RiseTheBrightness(TwoBlueLeds, "22:52:00", "23:02:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "23:02:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }
+      if (DayOfMonth == 20) {
+        // Continue from date 19
+        BlueBeforeTwilightStart = 21;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+
+        // Actual Day        
+        BlueBeforeTwilightStart = 18;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "23:41:00", "23:51:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "23:51:00", "23:59:59", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }
+      if (DayOfMonth == 21) {
+        // Continue from date 20
+        BlueBeforeTwilightStart = 18;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);        
+      }
+      if (DayOfMonth == 22) {
+        BlueBeforeTwilightStart = 15;
+        BlueAfterTwilightEnd = 0;        
+        RiseTheBrightness(TwoBlueLeds, "00:00:00", "00:10:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "00:10:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);        
+      }
+      if (DayOfMonth == 23) {
+        BlueBeforeTwilightStart = 12;
+        BlueAfterTwilightEnd = 0;        
+        RiseTheBrightness(TwoBlueLeds, "00:30:00", "00:40:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "00:40:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }
+      if (DayOfMonth == 24) {
+        BlueBeforeTwilightStart = 9;
+        BlueAfterTwilightEnd = 0;        
+        RiseTheBrightness(TwoBlueLeds, "01:18:00", "01:28:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "01:38:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }    
+      if (DayOfMonth == 25) {
+        BlueBeforeTwilightStart = 7;
+        BlueAfterTwilightEnd = 0;        
+        RiseTheBrightness(TwoBlueLeds, "02:05:00", "02:15:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "02:15:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }
+      if (DayOfMonth == 26) {
+        BlueBeforeTwilightStart = 4;
+        BlueAfterTwilightEnd = 0;        
+        RiseTheBrightness(TwoBlueLeds, "02:51:00", "03:01:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "03:01:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);    
+      }
+      if (DayOfMonth == 27) {
+        BlueBeforeTwilightStart = 3;
+        BlueAfterTwilightEnd = 0;        
+        RiseTheBrightness(TwoBlueLeds, "03:37:00", "03:47:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "03:47:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }
+      if (DayOfMonth == 28) {
+        BlueBeforeTwilightStart = 1;
+        BlueAfterTwilightEnd = 0;
+        RiseTheBrightness(TwoBlueLeds, "04:22:00", "04:32:00", 1, BlueBeforeTwilightStart);      
+        RiseTheBrightness(TwoBlueLeds, "04:32:00", "05:44:00", BlueBeforeTwilightStart, BlueBeforeTwilightStart);
+      }  
     }
   }
 
@@ -297,7 +397,8 @@ void loop() {
   // Fan();  
     Fan();
   // General delay
-    delay(1000);  
+    //delay(1000);  
+    delay(1000);
 }
 
 //// Fan Part
